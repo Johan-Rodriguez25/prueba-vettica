@@ -1,0 +1,27 @@
+{
+  "name": "ejercicios1y2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/app.js",
+  "scripts": {
+    "lint": "eslint --ext .ts src/**",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=local tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/app.js\""
+  },
+  "keywords": [],
+  "author": "Johan Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "tsc-watch": "^6.0.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
